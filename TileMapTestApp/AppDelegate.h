@@ -6,11 +6,19 @@
 //  Copyright © 2020 deepkick. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
-#import <CoreLocation/CoreLocation.h>
-#import <MapKit/MapKit.h>
+
 #import "Common_header.h"
+
+//#import <UIKit/UIKit.h>
+//#import <Foundation/Foundation.h>
+//#import <CoreLocation/CoreLocation.h>
+//#import <MapKit/MapKit.h>
+//
+//#import "DKMapViewController.h"
+//#import "Global.h"
+//#import "AppDelegate.h"
+
+@class DKMapViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, CLLocationManagerDelegate>
 

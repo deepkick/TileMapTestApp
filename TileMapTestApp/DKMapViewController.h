@@ -6,11 +6,21 @@
 //  Copyright © 2020 deepkick. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DKMapViewController : UIViewController
+@class AppDelegate;
+
+@interface DKMapViewController : UIViewController <MKMapViewDelegate, UIGestureRecognizerDelegate> {
+    
+}
+
+@property (strong, nonatomic) AppDelegate                   *appDelegate;
+
+@property (strong, nonatomic) MKMapView                         *map;
+@property (assign, nonatomic) CGFloat                           map_visibleRect_padding_left;
+@property (assign, nonatomic) CGFloat                           map_visibleRect_padding_top;
 
 @end
 

@@ -22,6 +22,10 @@
 # define LOGING_DIC(...);
 #endif
 
+#pragma mark -国土地理院地図　デフォルト設定」関連
+#define MAP_SIZE_RATIO_SCREEN                   1.0f
+#define MAP_STD_OVERLAY_DEFAULT_ALPHA           1.0f
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Global : NSObject
