@@ -18,7 +18,7 @@
 //#import "Global.h"
 //#import "AppDelegate.h"
 
-@class DKMapViewController;
+@class DKNavigationController, DKMapViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, CLLocationManagerDelegate>
 
@@ -32,7 +32,8 @@
 @property (assign, nonatomic) CGFloat                   WHOLE_OF_JAPAN_North_lat;
 @property (assign, nonatomic) CGFloat                   WHOLE_OF_JAPAN_South_lat;
 
-@property (strong, nonatomic) DKMapViewController               *dkMapViewController;
+@property (strong, nonatomic) DKNavigationController    *navigationForMap;
+@property (strong, nonatomic) DKMapViewController       *dkMapViewController;
 
 
 @end

@@ -15,6 +15,7 @@
 		FB3E5A752494560F0095FDBA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3E5A6E2494559C0095FDBA /* MapKit.framework */; };
 		FB3E5A792494576E0095FDBA /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3E5A782494576E0095FDBA /* Global.m */; };
 		FB3E5A7D24945C8E0095FDBA /* DKMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3E5A7C24945C8E0095FDBA /* DKMapViewController.m */; };
+		FB3E5A8024946BBA0095FDBA /* DKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3E5A7F24946BBA0095FDBA /* DKNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		FB3E5A7A249457C90095FDBA /* Common_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common_header.h; sourceTree = "<group>"; };
 		FB3E5A7B24945C8E0095FDBA /* DKMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKMapViewController.h; sourceTree = "<group>"; };
 		FB3E5A7C24945C8E0095FDBA /* DKMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKMapViewController.m; sourceTree = "<group>"; };
+		FB3E5A7E24946BBA0095FDBA /* DKNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKNavigationController.h; sourceTree = "<group>"; };
+		FB3E5A7F24946BBA0095FDBA /* DKNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +70,13 @@
 		FB3E5A532494536A0095FDBA /* TileMapTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				FB3E5A542494536A0095FDBA /* AppDelegate.h */,
-				FB3E5A552494536A0095FDBA /* AppDelegate.m */,
+				FB3E5A7A249457C90095FDBA /* Common_header.h */,
 				FB3E5A772494576E0095FDBA /* Global.h */,
 				FB3E5A782494576E0095FDBA /* Global.m */,
-				FB3E5A7A249457C90095FDBA /* Common_header.h */,
+				FB3E5A542494536A0095FDBA /* AppDelegate.h */,
+				FB3E5A552494536A0095FDBA /* AppDelegate.m */,
+				FB3E5A7E24946BBA0095FDBA /* DKNavigationController.h */,
+				FB3E5A7F24946BBA0095FDBA /* DKNavigationController.m */,
 				FB3E5A7B24945C8E0095FDBA /* DKMapViewController.h */,
 				FB3E5A7C24945C8E0095FDBA /* DKMapViewController.m */,
 				FB3E5A602494536C0095FDBA /* Assets.xcassets */,
@@ -160,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3E5A8024946BBA0095FDBA /* DKNavigationController.m in Sources */,
 				FB3E5A792494576E0095FDBA /* Global.m in Sources */,
 				FB3E5A7D24945C8E0095FDBA /* DKMapViewController.m in Sources */,
 				FB3E5A562494536A0095FDBA /* AppDelegate.m in Sources */,

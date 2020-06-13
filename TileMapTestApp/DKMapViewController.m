@@ -22,6 +22,7 @@
     self = [super init];
     self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
+    self.title = @"MapTest";
     //LOG(@"self.appDelegate = %@", self.appDelegate);
     
 //    self.mapDataBorderFlag = NO;

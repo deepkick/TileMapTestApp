@@ -21,7 +21,9 @@
     self.window = [[UIWindow alloc] initWithFrame:frameForWindow];
     
     self.dkMapViewController = [[DKMapViewController alloc] init];
-    self.window.rootViewController = self.dkMapViewController;
+    self.navigationForMap = [[DKNavigationController alloc] initWithRootViewController:self.dkMapViewController];
+    
+    self.window.rootViewController = self.navigationForMap;
     [self.window makeKeyAndVisible];
     return YES;
 }
