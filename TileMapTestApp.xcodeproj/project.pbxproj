@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB3E5A562494536A0095FDBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3E5A552494536A0095FDBA /* AppDelegate.m */; };
+		FB3E5A612494536C0095FDBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3E5A602494536C0095FDBA /* Assets.xcassets */; };
+		FB3E5A642494536C0095FDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3E5A622494536C0095FDBA /* LaunchScreen.storyboard */; };
+		FB3E5A672494536C0095FDBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3E5A662494536C0095FDBA /* main.m */; };
+		FB3E5A722494560D0095FDBA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3E5A70249455D40095FDBA /* CoreLocation.framework */; };
+		FB3E5A752494560F0095FDBA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3E5A6E2494559C0095FDBA /* MapKit.framework */; };
+		FB3E5A792494576E0095FDBA /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3E5A782494576E0095FDBA /* Global.m */; };
+		FB3E5A7D24945C8E0095FDBA /* DKMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3E5A7C24945C8E0095FDBA /* DKMapViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB3E5A512494536A0095FDBA /* TileMapTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TileMapTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3E5A542494536A0095FDBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB3E5A552494536A0095FDBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB3E5A602494536C0095FDBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB3E5A632494536C0095FDBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB3E5A652494536C0095FDBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB3E5A662494536C0095FDBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB3E5A6E2494559C0095FDBA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FB3E5A70249455D40095FDBA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FB3E5A772494576E0095FDBA /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		FB3E5A782494576E0095FDBA /* Global.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Global.m; sourceTree = "<group>"; };
+		FB3E5A7A249457C90095FDBA /* Common_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common_header.h; sourceTree = "<group>"; };
+		FB3E5A7B24945C8E0095FDBA /* DKMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKMapViewController.h; sourceTree = "<group>"; };
+		FB3E5A7C24945C8E0095FDBA /* DKMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKMapViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB3E5A4E2494536A0095FDBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3E5A752494560F0095FDBA /* MapKit.framework in Frameworks */,
+				FB3E5A722494560D0095FDBA /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB3E5A482494536A0095FDBA = {
+			isa = PBXGroup;
+			children = (
+				FB3E5A532494536A0095FDBA /* TileMapTestApp */,
+				FB3E5A522494536A0095FDBA /* Products */,
+				FB3E5A6D2494559C0095FDBA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FB3E5A522494536A0095FDBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB3E5A512494536A0095FDBA /* TileMapTestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB3E5A532494536A0095FDBA /* TileMapTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				FB3E5A542494536A0095FDBA /* AppDelegate.h */,
+				FB3E5A552494536A0095FDBA /* AppDelegate.m */,
+				FB3E5A772494576E0095FDBA /* Global.h */,
+				FB3E5A782494576E0095FDBA /* Global.m */,
+				FB3E5A7A249457C90095FDBA /* Common_header.h */,
+				FB3E5A7B24945C8E0095FDBA /* DKMapViewController.h */,
+				FB3E5A7C24945C8E0095FDBA /* DKMapViewController.m */,
+				FB3E5A602494536C0095FDBA /* Assets.xcassets */,
+				FB3E5A622494536C0095FDBA /* LaunchScreen.storyboard */,
+				FB3E5A652494536C0095FDBA /* Info.plist */,
+				FB3E5A662494536C0095FDBA /* main.m */,
+			);
+			path = TileMapTestApp;
+			sourceTree = "<group>";
+		};
+		FB3E5A6D2494559C0095FDBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB3E5A70249455D40095FDBA /* CoreLocation.framework */,
+				FB3E5A6E2494559C0095FDBA /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB3E5A502494536A0095FDBA /* TileMapTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB3E5A6A2494536C0095FDBA /* Build configuration list for PBXNativeTarget "TileMapTestApp" */;
+			buildPhases = (
+				FB3E5A4D2494536A0095FDBA /* Sources */,
+				FB3E5A4E2494536A0095FDBA /* Frameworks */,
+				FB3E5A4F2494536A0095FDBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TileMapTestApp;
+			productName = TileMapTestApp;
+			productReference = FB3E5A512494536A0095FDBA /* TileMapTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB3E5A492494536A0095FDBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = deepkick;
+				TargetAttributes = {
+					FB3E5A502494536A0095FDBA = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FB3E5A4C2494536A0095FDBA /* Build configuration list for PBXProject "TileMapTestApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB3E5A482494536A0095FDBA;
+			productRefGroup = FB3E5A522494536A0095FDBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB3E5A502494536A0095FDBA /* TileMapTestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB3E5A4F2494536A0095FDBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3E5A642494536C0095FDBA /* LaunchScreen.storyboard in Resources */,
+				FB3E5A612494536C0095FDBA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB3E5A4D2494536A0095FDBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3E5A792494576E0095FDBA /* Global.m in Sources */,
+				FB3E5A7D24945C8E0095FDBA /* DKMapViewController.m in Sources */,
+				FB3E5A562494536A0095FDBA /* AppDelegate.m in Sources */,
+				FB3E5A672494536C0095FDBA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB3E5A622494536C0095FDBA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB3E5A632494536C0095FDBA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB3E5A682494536C0095FDBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FB3E5A692494536C0095FDBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB3E5A6B2494536C0095FDBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JJX339L4P2;
+				INFOPLIST_FILE = TileMapTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.deepkick.TileMapTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FB3E5A6C2494536C0095FDBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JJX339L4P2;
+				INFOPLIST_FILE = TileMapTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.deepkick.TileMapTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB3E5A4C2494536A0095FDBA /* Build configuration list for PBXProject "TileMapTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB3E5A682494536C0095FDBA /* Debug */,
+				FB3E5A692494536C0095FDBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB3E5A6A2494536C0095FDBA /* Build configuration list for PBXNativeTarget "TileMapTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB3E5A6B2494536C0095FDBA /* Debug */,
+				FB3E5A6C2494536C0095FDBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB3E5A492494536A0095FDBA /* Project object */;
+}
