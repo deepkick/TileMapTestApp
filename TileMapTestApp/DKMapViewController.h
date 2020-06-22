@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class AppDelegate;
+@class AppDelegate, DKTileOverlay, DKTileOverlayRenderer;
 
 @interface DKMapViewController : UIViewController <MKMapViewDelegate, UIGestureRecognizerDelegate> {
     
@@ -27,6 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) MKPolygonRenderer                *dkStdMarkerRenderer;
 @property (strong, nonatomic) MKPolygon                         *dkSubAlphaMarker;
 @property (strong, nonatomic) MKPolygonRenderer                *dkSubAlphaMarkerRenderer;
+
+@property (strong, nonatomic) DKTileOverlay                     *dkTileOverlay;
+@property (strong, nonatomic) DKTileOverlayRenderer             *dkTileOverlayRenderer;
 
 @end
 
