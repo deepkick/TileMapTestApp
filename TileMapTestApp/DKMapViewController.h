@@ -22,6 +22,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign, nonatomic) CGFloat                           map_visibleRect_padding_left;
 @property (assign, nonatomic) CGFloat                           map_visibleRect_padding_top;
 
+@property (strong, nonatomic) MKPolygon                         *mapBackgroundPolygon;
+@property (strong, nonatomic) MKPolygon                         *dkStdMarker;
+@property (strong, nonatomic) MKPolygonRenderer                *dkStdMarkerRenderer;
+@property (strong, nonatomic) MKPolygon                         *dkSubAlphaMarker;
+@property (strong, nonatomic) MKPolygonRenderer                *dkSubAlphaMarkerRenderer;
+
 @end
 
 NS_ASSUME_NONNULL_END

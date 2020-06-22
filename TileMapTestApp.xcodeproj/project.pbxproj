@@ -16,6 +16,9 @@
 		FB3E5A792494576E0095FDBA /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3E5A782494576E0095FDBA /* Global.m */; };
 		FB3E5A7D24945C8E0095FDBA /* DKMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3E5A7C24945C8E0095FDBA /* DKMapViewController.m */; };
 		FB3E5A8024946BBA0095FDBA /* DKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3E5A7F24946BBA0095FDBA /* DKNavigationController.m */; };
+		FB3E5A83249470890095FDBA /* DKTileOverlayRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3E5A82249470890095FDBA /* DKTileOverlayRenderer.m */; };
+		FB3E5A86249471DD0095FDBA /* DKTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3E5A85249471DD0095FDBA /* DKTileOverlay.m */; };
+		FB3E5A892494E4C10095FDBA /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3E5A882494E4C10095FDBA /* MKMapView+ZoomLevel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,12 @@
 		FB3E5A7C24945C8E0095FDBA /* DKMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKMapViewController.m; sourceTree = "<group>"; };
 		FB3E5A7E24946BBA0095FDBA /* DKNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKNavigationController.h; sourceTree = "<group>"; };
 		FB3E5A7F24946BBA0095FDBA /* DKNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKNavigationController.m; sourceTree = "<group>"; };
+		FB3E5A81249470890095FDBA /* DKTileOverlayRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKTileOverlayRenderer.h; sourceTree = "<group>"; };
+		FB3E5A82249470890095FDBA /* DKTileOverlayRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKTileOverlayRenderer.m; sourceTree = "<group>"; };
+		FB3E5A84249471DD0095FDBA /* DKTileOverlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DKTileOverlay.h; sourceTree = "<group>"; };
+		FB3E5A85249471DD0095FDBA /* DKTileOverlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKTileOverlay.m; sourceTree = "<group>"; };
+		FB3E5A872494E4C00095FDBA /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
+		FB3E5A882494E4C10095FDBA /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +88,12 @@
 				FB3E5A7F24946BBA0095FDBA /* DKNavigationController.m */,
 				FB3E5A7B24945C8E0095FDBA /* DKMapViewController.h */,
 				FB3E5A7C24945C8E0095FDBA /* DKMapViewController.m */,
+				FB3E5A872494E4C00095FDBA /* MKMapView+ZoomLevel.h */,
+				FB3E5A882494E4C10095FDBA /* MKMapView+ZoomLevel.m */,
+				FB3E5A84249471DD0095FDBA /* DKTileOverlay.h */,
+				FB3E5A85249471DD0095FDBA /* DKTileOverlay.m */,
+				FB3E5A81249470890095FDBA /* DKTileOverlayRenderer.h */,
+				FB3E5A82249470890095FDBA /* DKTileOverlayRenderer.m */,
 				FB3E5A602494536C0095FDBA /* Assets.xcassets */,
 				FB3E5A622494536C0095FDBA /* LaunchScreen.storyboard */,
 				FB3E5A652494536C0095FDBA /* Info.plist */,
@@ -165,8 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3E5A86249471DD0095FDBA /* DKTileOverlay.m in Sources */,
+				FB3E5A892494E4C10095FDBA /* MKMapView+ZoomLevel.m in Sources */,
 				FB3E5A8024946BBA0095FDBA /* DKNavigationController.m in Sources */,
 				FB3E5A792494576E0095FDBA /* Global.m in Sources */,
+				FB3E5A83249470890095FDBA /* DKTileOverlayRenderer.m in Sources */,
 				FB3E5A7D24945C8E0095FDBA /* DKMapViewController.m in Sources */,
 				FB3E5A562494536A0095FDBA /* AppDelegate.m in Sources */,
 				FB3E5A672494536C0095FDBA /* main.m in Sources */,
