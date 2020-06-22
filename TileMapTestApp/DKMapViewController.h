@@ -31,6 +31,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) DKTileOverlay                     *dkTileOverlay;
 @property (strong, nonatomic) DKTileOverlayRenderer             *dkTileOverlayRenderer;
 
+- (CLLocationCoordinate2D *)getPolygonCoords:(CGRect)targetRect;
+
 @end
 
 NS_ASSUME_NONNULL_END

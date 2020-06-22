@@ -99,18 +99,6 @@ NS_ASSUME_NONNULL_BEGIN
     
 }
 
-#pragma mark - LocalMapInfo Methods
-+ (NSDictionary *)getLocalMapInfoDic:(NSString *)path;
-+ (MKMapRect)getMapRectOfLocalMapInfo:(NSString *)path margin:(CGFloat)margin;
-+ (MKMapRect)getMapRectCoordinate_NW:(CLLocationCoordinate2D)coordinate_NW
-                       Coordinate_SE:(CLLocationCoordinate2D)coordinate_SE
-                              margin:(CGFloat)margin;
-+ (NSString *)getDocNameOfLocalMapInfo:(NSString *)path;
-//+ (NSString *)getLocalImagesPathOfLocalMapInfo:(NSString *)path;
-+ (kMapType)getMapTypeOfLocalMapInfo:(NSString *)path;
-+ (NSString *)getStatusOfLocalMapInfo:(NSString *)path;
-+ (BOOL)getFlag2500OfLocalMapInfo:(NSString *)path;
-
 @end
 
 NS_ASSUME_NONNULL_END
