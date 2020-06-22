@@ -116,6 +116,8 @@
 - (void)setupTileRenderer {
     LOG_CURRENT_METHOD;
     NSString *template = GSI_PALE_BASE_URL;
+    //NSString *template = GSI_SEAMLESSPHOTO_BASE_URL;
+    
     
     self.dkTileOverlay = [[DKTileOverlay alloc] initWithURLTemplate:template];
     self.dkTileOverlay.canReplaceMapContent = NO;
@@ -124,7 +126,35 @@
     //tileRenderer = DKTileOverlayRenderer(tileOverlay: overlay)
 }
 
+ - (NSURL *)URLForTilePath:(MKTileOverlayPath)path {
+     LOG_CURRENT_METHOD;
+     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://cyberjapandata.gsi.go.jp/xyz/pale/{%ld}/{%ld}/{%ld}.png", (long)path.z, (long)path.x, (long)path.y]];
+     return url;
+}
 
+- (void)loadTileAtPath:(MKTileOverlayPath)path result:(void (^)(NSData * _Nullable, NSError * _Nullable))result {
+    LOG_CURRENT_METHOD;
+    NSString *tilePath = [[self URLForTilePath:path] absoluteString];
+    NSData *data = nil;
+
+    if (![[NSFileManager defaultManager] fileExistsAtPath:tilePath]) {
+        LOG(@"Z%ld/%ld/%ld does not exist!", path.z, path.x, path.y);
+    } else {
+        LOG(@"Z%ld/%ld/%ld exist", path.z, path.x, path.y);
+
+        UIImage *image = [UIImage imageWithContentsOfFile:tilePath];
+        data = UIImageJPEGRepresentation(image, 0.8);
+        // Instead of: data = [NSData dataWithContentsOfFile:tilePath];
+
+        if (data == nil) {
+            LOG(@"Error!!! Unable to read an existing file!");
+        }
+    }
+
+    dispatch_async(dispatch_get_main_queue(), ^{
+        result(data, nil);
+    });
+}
 
 -(MKOverlayRenderer *)mapView:(MKMapView*)mapView rendererForOverlay:(id<MKOverlay>)overlay {
     LOG_CURRENT_METHOD;
