@@ -124,38 +124,7 @@
     //tileRenderer = DKTileOverlayRenderer(tileOverlay: overlay)
 }
 
-- (CLLocationCoordinate2D *)getPolygonCoords:(CGRect)targetRect {
-    //LOG_CURRENT_METHOD;
-    
-    CGPoint northWest = CGPointMake(targetRect.origin.x
-                                    ,targetRect.origin.y);
-    CLLocationCoordinate2D nwCoord = [self.map convertPoint:northWest toCoordinateFromView:self.map];
-    
-    CGPoint southWest = CGPointMake(targetRect.origin.x
-                                    ,targetRect.origin.y + targetRect.size.height);
-    CLLocationCoordinate2D swCoord = [self.map convertPoint:southWest toCoordinateFromView:self.map];
-    
-    CGPoint southEast = CGPointMake(targetRect.origin.x + targetRect.size.width
-                                    ,targetRect.origin.y + targetRect.size.height);
-    CLLocationCoordinate2D seCoord = [self.map convertPoint:southEast toCoordinateFromView:self.map];
-    
-    CGPoint northEast = CGPointMake(targetRect.origin.x + targetRect.size.width
-                                    ,targetRect.origin.y);
-    CLLocationCoordinate2D neCoord = [self.map convertPoint:northEast toCoordinateFromView:self.map];
-    
-    CLLocationCoordinate2D *polygonCoords = malloc(sizeof(CLLocationCoordinate2D) * 4);
-    polygonCoords[0] = nwCoord;
-    polygonCoords[1] = swCoord;
-    polygonCoords[2] = seCoord;
-    polygonCoords[3] = neCoord;
-    
-//    LOG(@"nwCoord:lat = %f, lon = %f", polygonCoords[0].latitude, polygonCoords[0].longitude);
-//    LOG(@"swCoord:lat = %f, lon = %f", polygonCoords[1].latitude, polygonCoords[1].longitude);
-//    LOG(@"seCoord:lat = %f, lon = %f", polygonCoords[2].latitude, polygonCoords[2].longitude);
-//    LOG(@"neCoord:lat = %f, lon = %f", polygonCoords[3].latitude, polygonCoords[3].longitude);
-    
-    return polygonCoords;
-}
+
 
 -(MKOverlayRenderer *)mapView:(MKMapView*)mapView rendererForOverlay:(id<MKOverlay>)overlay {
     LOG_CURRENT_METHOD;
